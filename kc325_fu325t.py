@@ -89,16 +89,6 @@ _usb3_io = [
         Subsignal("n", Pins("A3")),
     ),
 
-    # SMA
-    ("sma_tx", 0,
-        Subsignal("p", Pins("K2")),
-        Subsignal("n", Pins("K1"))
-    ),
-    ("sma_rx", 0,
-        Subsignal("p", Pins("K6")),
-        Subsignal("n", Pins("K5"))
-    ),
-
     # SFP A / Through XillyUSB's SFP2USB.
     # Note Pins not reversed, may need to be for XillyUSB
     ("sfp_tx", 0,
