@@ -144,7 +144,7 @@ class _CRG(Module):
 
 class USB3SoC(SoCMini):
     def __init__(self, platform, connector="sfp", with_etherbone=True, with_analyzer=True):
-        sys_clk_freq = int(125e6)
+        sys_clk_freq = int(100e6)
 
         # SoCMini ----------------------------------------------------------------------------------
         SoCMini.__init__(self, platform, sys_clk_freq, ident="USB3SoC", ident_version=True)
